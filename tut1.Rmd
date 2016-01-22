@@ -1,0 +1,13 @@
+---
+title: "Tutorial 1"
+author: "Wang Zhe"
+date: "January 22, 2016"
+output: md_document
+---
+
+```{r, message=FALSE, echo=FALSE}
+library(dplyr)
+library(ggplot2)
+ggplot(cars, aes(speed, dist)) + geom_point()
+dplyr::filter(cars, speed == 4)
+```
